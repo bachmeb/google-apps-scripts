@@ -3,7 +3,7 @@ function readSpreadsheet() {
   Logger.log("Hello. The time is " + Date.now() );
   
   //Open the spreadsheet
-  var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/18HI_TxK4nttGt5-WqHjOTbtJ_QAESyNyQsmc3Y4d9Zo/edit#gid=0");
+  var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/GET THE URL OF YOUR SPREADSHEET]/edit#gid=0");
   Logger.log("The name of the sheet is " + sheet.getSheetName());
   
   //Get a range of rows from the spreadsheet
@@ -14,7 +14,7 @@ function readSpreadsheet() {
   var values = range.getValues();
   Logger.log("There are this many values in the values array: " + values.length);
   //Open the form by URL and assign it to a local object
-  var form = FormApp.openByUrl('https://docs.google.com/forms/d/1ntHqAZS0u-pAQHvI2k73_dCQsYQQ4U8eNPhlYewUV4o/edit');
+  var form = FormApp.openByUrl('https://docs.google.com/forms/d/GET THE URL OF YOUR FORM]/edit');
   Logger.log("The name of the form is " + form.getTitle() );
   //Make an object of the questions in the Form. These are the questions defined when the form was designed, not the responses to the questions already submitted. 
   var items = form.getItems();
