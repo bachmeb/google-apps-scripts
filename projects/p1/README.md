@@ -4,10 +4,21 @@
 http://bachmeb.weebly.com/copy-values-from-a-google-spreadsheet-to-a-google-form-with-google-apps-script.html
 
 ##### Create the Google Form. Note the URL.
+* https://docs.google.com/forms/
+ 
 ##### Create the Google Spreadsheet. Note the URL.
+* https://docs.google.com/spreadsheets/u/0/
+
 ##### Populate the spreadsheet with the values which will be added to the form. Rows are individual form entries. Columns are questions on the form.
-##### Go to the Tools menu of the Google Form and select Script Editor
+```
+```
+
+##### Open the Google Form Script Editor
+    Tools > Script Editor
+
 ##### Create a new blank script
+    File > New > Script File: "Hello"
+
 ##### Create a new function in the script
 ```
 function hello() {
@@ -16,6 +27,7 @@ function hello() {
   
 }
 ```
+
 ##### Run the function and check the log
     Run > hello
     View > Logs
