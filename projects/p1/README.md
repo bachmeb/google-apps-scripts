@@ -3,7 +3,7 @@
 ## References
 * http://bachmeb.weebly.com/copy-values-from-a-google-spreadsheet-to-a-google-form-with-google-apps-script.html
 * https://developers.google.com/apps-script/reference/forms/
-* https://developers.google.com/apps-script/reference/spreadsheet/?hl=en
+* https://developers.google.com/apps-script/reference/spreadsheet/
 
 ##### Create the Google Form. Note the URL.
 * https://docs.google.com/forms/
