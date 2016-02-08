@@ -12,8 +12,12 @@
 * https://docs.google.com/spreadsheets/u/0/
 
 ##### Populate the spreadsheet with the values which will be added to the form. Rows are individual form entries. Columns are questions on the form.
-```
-```
+
+|Name|Address|Phone|
+|----|-------|-----|
+|William|123 Apple St|555-1234|
+|Rose|456 Plum St|555-4321|
+
 
 ##### Open the Google Form Script Editor
     Tools > Script Editor
