@@ -17,6 +17,8 @@
 |----|-------|-----|
 |William|123 Apple St|555-1234|
 |Rose|456 Plum St|555-4321|
+|Francisco|789 Peach St|555-6789|
+|Angelina|321 Pear St|555-9876|
 
 
 ##### Open the Google Form Script Editor
