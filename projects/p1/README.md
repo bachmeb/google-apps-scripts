@@ -8,6 +8,11 @@
 ##### Create the Google Form. Note the URL.
 * https://docs.google.com/forms/
  
+##### Add questions to the form
+    Name
+    Address
+    Phone
+
 ##### Create the Google Spreadsheet. Note the URL.
 * https://docs.google.com/spreadsheets/u/0/
 
