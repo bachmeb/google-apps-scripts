@@ -4,4 +4,4 @@
 * https://developers.google.com/apps-script/
 
 ## Projects
-#### [Copy values from a spreadsheet to a form](./projects/p1)
+* [Copy values from a spreadsheet to a form](./projects/p1)
