@@ -36,7 +36,7 @@ function hello() {
     File > New > Script file: "Read Spreadsheet"
     
 ##### Create a new function and add the following statements to the function.
-```
+```javascript
 function readSpreadsheet() {
   //Open the spreadsheet
   var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/[GET THE URL OF YOUR SPREADSHEET]/edit#gid=0");
@@ -51,7 +51,9 @@ function readSpreadsheet() {
   //Open the form by URL and assign it to a local object
   var form = FormApp.openByUrl('https://docs.google.com/forms/d/[GET THE URL OF YOUR FORM]/viewform?usp=send_form');
   Logger.log("The name of the form is " + form.getTitle());
-  //Make an object of the questions in the Form. These are the questions defined when the form was designed, not the responses to the questions already submitted. 
+  /*Make an object of the questions in the Form. 
+  These are the questions defined when the form was designed, 
+  not the responses to the questions already submitted.*/
   var items = form.getItems();
   //Loop through every row in the spreadsheet
   //Start at 1 if the spreadsheet has a header row
@@ -85,17 +87,17 @@ function readSpreadsheet() {
           continue;
           //Close the switch statement
       }
-      //At this point, because of a break in the previous switch statement, a TEXT or PARAGRAPH_TEXT element was found in the formResponse collection and has been assigned to the item object. 
-      //Now put the String value from the cell in the spreadsheet at k-position into this element and increment the k-counter to point to the next column in the spreadsheet row
+      /* At this point, because of a break in the previous switch statement, 
+      a TEXT or PARAGRAPH_TEXT element was found in the formResponse collection 
+      and has been assigned to the item object. 
+      Now put the String value from the cell in the spreadsheet at k-position into this element 
+      and increment the k-counter to point to the next column in the spreadsheet row */
       formResponse.withItemResponse(item.createResponse(value[k++]));
-      //Close the loop
     }
     //Submit the form response
     formResponse.submit();
     //Sleep for a second to make sure every form response gets a unique timestamp
     Utilities.sleep(1000);
-    //Close the loop
   }
-  //Close the function
 }
 ```
