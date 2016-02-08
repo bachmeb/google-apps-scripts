@@ -37,9 +37,16 @@ function hello() {
     
 ##### Create a new function and add the following statements to the function.
 ```javascript
+var formURL = "https://docs.google.com/forms/[THE URL OF YOUR FORM]";
+var sheetURL = "https://docs.google.com/spreadsheets/[THE URL OF YOUR SPREADSHEET]";
+
+function main() {
+  readSpreadsheet();
+}
+
 function readSpreadsheet() {
   //Open the spreadsheet
-  var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/[GET THE URL OF YOUR SPREADSHEET]/edit#gid=0");
+  var sheet = SpreadsheetApp.openByUrl(sheetURL);
   Logger.log("The name of the sheet is " + sheet.getSheetName());
   //Get a range of rows from the spreadsheet
   var range = sheet.getDataRange();
@@ -49,7 +56,7 @@ function readSpreadsheet() {
   var values = range.getValues();
   Logger.log("There are this many values in the values array: " + values.length);
   //Open the form by URL and assign it to a local object
-  var form = FormApp.openByUrl('https://docs.google.com/forms/d/[GET THE URL OF YOUR FORM]/viewform?usp=send_form');
+  var form = FormApp.openByUrl(formURL);
   Logger.log("The name of the form is " + form.getTitle());
   /*Make an object of the questions in the Form. 
   These are the questions defined when the form was designed, 
@@ -101,3 +108,5 @@ function readSpreadsheet() {
   }
 }
 ```
+##### Run the main function
+    Run > main
