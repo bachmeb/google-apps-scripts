@@ -4,6 +4,7 @@
 * http://bachmeb.weebly.com/
 * https://developers.google.com/apps-script/reference/forms/
 * https://developers.google.com/apps-script/reference/spreadsheet/
+* http://webapps.stackexchange.com/questions/28154/importing-responses-into-a-google-docs-form-spreadsheet
 
 ##### Create the Google Form. Note the URL.
 * https://docs.google.com/forms/
